@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+echo "loading $1 to STM32"
+
+if [ -z "$1" ]; then
+echo "Specify binary file as first argument"
+exit 1
+fi
+
+
+if [ -z "$2" ]; then
+stm32flash -b 115200 -w $1  -g 0x0 /dev/ttyS0
+minicom -D /dev/ttyS0 -c on
+else
+stm32flash -b 115200 -w $1  -g 0x0 $2
+minicom -D $2 -c on
+fi

@@ -1,0 +1,341 @@
+17:52:40,421 TRACE [R] ContextManager starting, bundle version: 1.5.0.201111031624
+17:52:40,531 DEBUG [C] Property change listener is enabled.
+17:52:40,593 TRACE [R] ContextManager startingneed update: true
+17:52:40,640 DEBUG [T] Starting Search for CPs
+17:52:40,640 DEBUG [T] CP named BlackBerry Java SDK version 6.0.0 was found at C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components
+17:52:41,031 DEBUG [B] qualifier: 0
+17:52:41,468 DEBUG [K] VM: *ADDED* [1332863561468$C:\Program Files\Java\jre7]
+17:52:41,468 DEBUG [K] Event [org.eclipse.jdt.launching.PROPERTY_JAVADOC_LOCATION] for: *OLD* was[http://download.oracle.com/javase/7/docs/api/] *NEW* is [].
+17:52:41,500 TRACE [V] Attempting to create VM with name - BlackBerry JRE 6.0.0
+17:52:41,500 DEBUG [K] VM: *ADDED* [BlackBerry JRE 6.0.0$C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components]
+17:52:41,515 TRACE [C] openStartupOnEclpseFirstStart was changed from "false" to "false"
+17:52:41,671 DEBUG [I] Bundle [net.rim.ejde] is changing state to Started.
+17:54:05,781 DEBUG [B] qualifier: 19
+09:45:26,531 TRACE [R] ContextManager starting, bundle version: 1.5.0.201111031624
+09:45:26,906 DEBUG [C] Property change listener is enabled.
+09:45:27,140 TRACE [R] ContextManager startingneed update: true
+09:45:27,187 DEBUG [T] Starting Search for CPs
+09:45:27,234 DEBUG [T] CP named BlackBerry Java SDK version 6.0.0 was found at C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components
+09:45:27,578 DEBUG [K] VM: *ADDED* [BlackBerry JRE 6.0.0$C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components]
+09:45:27,609 TRACE [C] openStartupOnEclpseFirstStart was changed from "false" to "false"
+09:45:27,671 DEBUG [B] qualifier: 0
+09:45:27,890 DEBUG [K] VM: *ADDED* [1332863561468$C:\Program Files\Java\jre7]
+09:45:27,890 TRACE [V] Attempting to create VM with name - BlackBerry JRE 6.0.0
+09:45:28,187 DEBUG [I] Bundle [net.rim.ejde] is changing state to Started.
+09:46:52,875 DEBUG [B] qualifier: 19
+09:47:14,359 TRACE [C] openAppDescriptorOnNew was changed from "true" to "false"
+09:47:14,359 TRACE [C] openStartupOnNew was changed from "true" to "false"
+09:47:14,359 TRACE [C] updateNotify was changed from "true" to "false"
+13:44:09,500 TRACE [R] ContextManager starting, bundle version: 1.5.0.201111031624
+13:44:09,906 DEBUG [C] Property change listener is enabled.
+13:44:10,078 TRACE [R] ContextManager startingneed update: false
+13:44:10,093 DEBUG [T] Starting Search for CPs
+13:44:10,125 DEBUG [T] CP named BlackBerry Java SDK version 6.0.0 was found at C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components
+13:44:10,203 DEBUG [K] VM: *ADDED* [BlackBerry JRE 6.0.0$C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components]
+13:44:10,468 DEBUG [K] VM: *ADDED* [1332863561468$C:\Program Files\Java\jre7]
+13:44:10,468 TRACE [V] Attempting to create VM with name - BlackBerry JRE 6.0.0
+13:44:10,765 DEBUG [I] Bundle [net.rim.ejde] is changing state to Started.
+14:34:03,187 TRACE [R] ContextManager starting, bundle version: 1.5.0.201111031624
+14:34:03,515 DEBUG [C] Property change listener is enabled.
+14:34:03,687 TRACE [R] ContextManager startingneed update: false
+14:34:03,703 DEBUG [T] Starting Search for CPs
+14:34:03,734 DEBUG [T] CP named BlackBerry Java SDK version 6.0.0 was found at C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components
+14:34:03,812 DEBUG [K] VM: *ADDED* [BlackBerry JRE 6.0.0$C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components]
+14:34:04,015 DEBUG [K] VM: *ADDED* [1332863561468$C:\Program Files\Java\jre7]
+14:34:04,015 TRACE [V] Attempting to create VM with name - BlackBerry JRE 6.0.0
+14:34:04,265 DEBUG [I] Bundle [net.rim.ejde] is changing state to Started.
+10:22:35,312 TRACE [R] ContextManager starting, bundle version: 1.5.0.201111031624
+10:22:35,671 DEBUG [C] Property change listener is enabled.
+10:22:35,875 TRACE [R] ContextManager startingneed update: false
+10:22:35,890 DEBUG [T] Starting Search for CPs
+10:22:35,921 DEBUG [T] CP named BlackBerry Java SDK version 6.0.0 was found at C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components
+10:22:36,000 DEBUG [K] VM: *ADDED* [1332863561468$C:\Program Files\Java\jre7]
+10:22:36,000 DEBUG [K] VM: *ADDED* [BlackBerry JRE 6.0.0$C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components]
+10:22:36,296 TRACE [V] Attempting to create VM with name - BlackBerry JRE 6.0.0
+10:22:36,484 DEBUG [I] Bundle [net.rim.ejde] is changing state to Started.
+11:29:15,218 TRACE [R] ContextManager starting, bundle version: 1.5.0.201111031624
+11:29:15,328 DEBUG [C] Property change listener is enabled.
+11:29:15,390 TRACE [R] ContextManager startingneed update: false
+11:29:15,390 DEBUG [T] Starting Search for CPs
+11:29:15,390 DEBUG [T] CP named BlackBerry Java SDK version 6.0.0 was found at C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components
+11:29:15,421 DEBUG [K] VM: *ADDED* [1332863561468$C:\Program Files\Java\jre7]
+11:29:15,421 DEBUG [K] VM: *ADDED* [BlackBerry JRE 6.0.0$C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components]
+11:29:15,546 TRACE [V] Attempting to create VM with name - BlackBerry JRE 6.0.0
+11:29:15,562 DEBUG [I] Bundle [net.rim.ejde] is changing state to Started.
+11:37:44,203 DEBUG [E] Error removing BB properties from Cache on project <src> deletion
+org.eclipse.core.internal.resources.ResourceException: Resource '/src' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+	at net.rim.ejde.internal.E.E.resourceChanged(RIMEIDE:2456)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.handleEvent(NotificationManager.java:261)
+	at org.eclipse.core.internal.resources.Workspace.broadcastEvent(Workspace.java:390)
+	at org.eclipse.core.internal.resources.Resource.broadcastPreDeleteEvent(Resource.java:1988)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:765)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:130)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+17:02:35,546 TRACE [R] ContextManager starting, bundle version: 1.5.0.201111031624
+17:02:35,937 DEBUG [C] Property change listener is enabled.
+17:02:36,203 TRACE [R] ContextManager startingneed update: false
+17:02:36,203 DEBUG [T] Starting Search for CPs
+17:02:36,234 DEBUG [T] CP named BlackBerry Java SDK version 6.0.0 was found at C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components
+17:02:36,328 DEBUG [K] VM: *ADDED* [BlackBerry JRE 6.0.0$C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components]
+17:02:36,640 DEBUG [K] VM: *ADDED* [1332863561468$C:\Program Files\Java\jre7]
+17:02:36,640 TRACE [V] Attempting to create VM with name - BlackBerry JRE 6.0.0
+17:02:36,937 DEBUG [I] Bundle [net.rim.ejde] is changing state to Started.
+07:05:35,937 TRACE [R] ContextManager starting, bundle version: 1.5.0.201111031624
+07:05:36,421 DEBUG [C] Property change listener is enabled.
+07:05:36,671 TRACE [R] ContextManager startingneed update: false
+07:05:36,687 DEBUG [T] Starting Search for CPs
+07:05:36,734 DEBUG [T] CP named BlackBerry Java SDK version 6.0.0 was found at C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components
+07:05:36,859 DEBUG [K] VM: *ADDED* [1332863561468$C:\Program Files\Java\jre7]
+07:05:36,859 DEBUG [K] VM: *ADDED* [BlackBerry JRE 6.0.0$C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components]
+07:05:37,125 TRACE [V] Attempting to create VM with name - BlackBerry JRE 6.0.0
+07:05:37,484 DEBUG [I] Bundle [net.rim.ejde] is changing state to Started.
+13:14:44,906 TRACE [R] ContextManager starting, bundle version: 1.5.0.201111031624
+13:14:45,328 DEBUG [C] Property change listener is enabled.
+13:14:45,625 TRACE [R] ContextManager startingneed update: false
+13:14:45,625 DEBUG [T] Starting Search for CPs
+13:14:45,671 DEBUG [T] CP named BlackBerry Java SDK version 6.0.0 was found at C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components
+13:14:45,765 DEBUG [K] VM: *ADDED* [BlackBerry JRE 6.0.0$C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components]
+13:14:45,984 DEBUG [K] VM: *ADDED* [1332863561468$C:\Program Files\Java\jre7]
+13:14:45,984 TRACE [V] Attempting to create VM with name - BlackBerry JRE 6.0.0
+13:14:46,250 DEBUG [I] Bundle [net.rim.ejde] is changing state to Started.
+08:48:54,109 TRACE [R] ContextManager starting, bundle version: 1.5.0.201111031624
+08:48:54,531 DEBUG [C] Property change listener is enabled.
+08:48:54,828 TRACE [R] ContextManager startingneed update: false
+08:48:54,843 DEBUG [T] Starting Search for CPs
+08:48:54,890 DEBUG [T] CP named BlackBerry Java SDK version 6.0.0 was found at C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components
+08:48:55,000 DEBUG [K] VM: *ADDED* [BlackBerry JRE 6.0.0$C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components]
+08:48:55,250 DEBUG [K] VM: *ADDED* [1332863561468$C:\Program Files\Java\jre7]
+08:48:55,250 TRACE [V] Attempting to create VM with name - BlackBerry JRE 6.0.0
+08:48:55,468 DEBUG [I] Bundle [net.rim.ejde] is changing state to Started.
+09:07:21,656 DEBUG [I] Bundle [net.rim.ejde] is changing state to Stopping.
+09:07:21,656 DEBUG [C] Property change listener is disabled.
+09:07:26,750 TRACE [R] ContextManager starting, bundle version: 1.5.0.201111031624
+09:07:26,875 DEBUG [C] Property change listener is enabled.
+09:07:26,937 TRACE [R] ContextManager startingneed update: false
+09:07:26,937 DEBUG [T] Starting Search for CPs
+09:07:26,953 DEBUG [T] CP named BlackBerry Java SDK version 6.0.0 was found at C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components
+09:07:26,968 DEBUG [K] VM: *ADDED* [BlackBerry JRE 6.0.0$C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components]
+09:07:27,281 DEBUG [K] VM: *ADDED* [1332863561468$C:\Program Files\Java\jre7]
+09:07:27,281 TRACE [V] Attempting to create VM with name - BlackBerry JRE 6.0.0
+09:07:27,375 DEBUG [I] Bundle [net.rim.ejde] is changing state to Started.
+09:39:57,031 TRACE [R] ContextManager starting, bundle version: 1.5.0.201111031624
+09:39:57,156 DEBUG [C] Property change listener is enabled.
+09:39:57,218 TRACE [R] ContextManager startingneed update: false
+09:39:57,218 DEBUG [T] Starting Search for CPs
+09:39:57,234 DEBUG [T] CP named BlackBerry Java SDK version 6.0.0 was found at C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components
+09:39:57,250 DEBUG [K] VM: *ADDED* [BlackBerry JRE 6.0.0$C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components]
+09:39:57,375 DEBUG [K] VM: *ADDED* [1332863561468$C:\Program Files\Java\jre7]
+09:39:57,375 TRACE [V] Attempting to create VM with name - BlackBerry JRE 6.0.0
+09:39:57,468 DEBUG [I] Bundle [net.rim.ejde] is changing state to Started.
+10:06:09,812 TRACE [R] ContextManager starting, bundle version: 1.5.0.201111031624
+10:06:09,937 DEBUG [C] Property change listener is enabled.
+10:06:10,000 TRACE [R] ContextManager startingneed update: false
+10:06:10,000 DEBUG [T] Starting Search for CPs
+10:06:10,000 DEBUG [T] CP named BlackBerry Java SDK version 6.0.0 was found at C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components
+10:06:10,031 DEBUG [K] VM: *ADDED* [BlackBerry JRE 6.0.0$C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components]
+10:06:10,156 DEBUG [K] VM: *ADDED* [1332863561468$C:\Program Files\Java\jre7]
+10:06:10,156 TRACE [V] Attempting to create VM with name - BlackBerry JRE 6.0.0
+10:06:10,250 DEBUG [I] Bundle [net.rim.ejde] is changing state to Started.
+10:26:50,484 TRACE [R] ContextManager starting, bundle version: 1.5.0.201111031624
+10:26:50,609 DEBUG [C] Property change listener is enabled.
+10:26:50,671 TRACE [R] ContextManager startingneed update: false
+10:26:50,671 DEBUG [T] Starting Search for CPs
+10:26:50,687 DEBUG [T] CP named BlackBerry Java SDK version 6.0.0 was found at C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components
+10:26:50,703 DEBUG [K] VM: *ADDED* [1332863561468$C:\Program Files\Java\jre7]
+10:26:50,703 DEBUG [K] VM: *ADDED* [BlackBerry JRE 6.0.0$C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components]
+10:26:50,828 TRACE [V] Attempting to create VM with name - BlackBerry JRE 6.0.0
+10:26:50,921 DEBUG [I] Bundle [net.rim.ejde] is changing state to Started.
+10:27:56,859 DEBUG [I] Bundle [net.rim.ejde] is changing state to Stopping.
+10:27:56,859 DEBUG [C] Property change listener is disabled.
+10:28:05,593 TRACE [R] ContextManager starting, bundle version: 1.5.0.201111031624
+10:28:05,734 DEBUG [C] Property change listener is enabled.
+10:28:05,796 TRACE [R] ContextManager startingneed update: false
+10:28:05,796 DEBUG [T] Starting Search for CPs
+10:28:05,796 DEBUG [T] CP named BlackBerry Java SDK version 6.0.0 was found at C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components
+10:28:05,828 DEBUG [K] VM: *ADDED* [1332863561468$C:\Program Files\Java\jre7]
+10:28:05,828 DEBUG [K] VM: *ADDED* [BlackBerry JRE 6.0.0$C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components]
+10:28:05,953 TRACE [V] Attempting to create VM with name - BlackBerry JRE 6.0.0
+10:28:06,046 DEBUG [I] Bundle [net.rim.ejde] is changing state to Started.
+13:29:55,750 TRACE [R] ContextManager starting, bundle version: 1.5.0.201111031624
+13:29:55,890 DEBUG [C] Property change listener is enabled.
+13:29:55,937 TRACE [R] ContextManager startingneed update: false
+13:29:55,937 DEBUG [T] Starting Search for CPs
+13:29:55,937 DEBUG [T] CP named BlackBerry Java SDK version 6.0.0 was found at C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components
+13:29:55,968 DEBUG [K] VM: *ADDED* [BlackBerry JRE 6.0.0$C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components]
+13:29:56,093 DEBUG [K] VM: *ADDED* [1332863561468$C:\Program Files\Java\jre7]
+13:29:56,093 TRACE [V] Attempting to create VM with name - BlackBerry JRE 6.0.0
+13:29:56,203 DEBUG [I] Bundle [net.rim.ejde] is changing state to Started.
+08:41:30,015 TRACE [R] ContextManager starting, bundle version: 1.5.0.201111031624
+08:41:30,437 DEBUG [C] Property change listener is enabled.
+08:41:30,781 TRACE [R] ContextManager startingneed update: false
+08:41:30,796 DEBUG [T] Starting Search for CPs
+08:41:30,843 DEBUG [T] CP named BlackBerry Java SDK version 6.0.0 was found at C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components
+08:41:30,937 DEBUG [K] VM: *ADDED* [BlackBerry JRE 6.0.0$C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components]
+08:41:31,171 DEBUG [K] VM: *ADDED* [1332863561468$C:\Program Files\Java\jre7]
+08:41:31,171 TRACE [V] Attempting to create VM with name - BlackBerry JRE 6.0.0
+08:41:31,437 DEBUG [I] Bundle [net.rim.ejde] is changing state to Started.
+09:17:29,453 TRACE [R] ContextManager starting, bundle version: 1.5.0.201111031624
+09:17:29,859 DEBUG [C] Property change listener is enabled.
+09:17:30,156 TRACE [R] ContextManager startingneed update: false
+09:17:30,171 DEBUG [T] Starting Search for CPs
+09:17:30,218 DEBUG [T] CP named BlackBerry Java SDK version 6.0.0 was found at C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components
+09:17:30,312 DEBUG [K] VM: *ADDED* [1332863561468$C:\Program Files\Java\jre7]
+09:17:30,312 DEBUG [K] VM: *ADDED* [BlackBerry JRE 6.0.0$C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components]
+09:17:30,640 TRACE [V] Attempting to create VM with name - BlackBerry JRE 6.0.0
+09:17:30,875 DEBUG [I] Bundle [net.rim.ejde] is changing state to Started.
+15:33:16,546 TRACE [R] ContextManager starting, bundle version: 1.5.0.201111031624
+15:33:16,671 DEBUG [C] Property change listener is enabled.
+15:33:16,781 TRACE [R] ContextManager startingneed update: false
+15:33:16,781 DEBUG [T] Starting Search for CPs
+15:33:16,781 DEBUG [T] CP named BlackBerry Java SDK version 6.0.0 was found at C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components
+15:33:16,812 DEBUG [K] VM: *ADDED* [1332863561468$C:\Program Files\Java\jre7]
+15:33:16,812 DEBUG [K] VM: *ADDED* [BlackBerry JRE 6.0.0$C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components]
+15:33:17,031 TRACE [V] Attempting to create VM with name - BlackBerry JRE 6.0.0
+15:33:17,046 DEBUG [I] Bundle [net.rim.ejde] is changing state to Started.
+15:33:53,671 DEBUG [E] Error removing BB properties from Cache on project <terminal> deletion
+org.eclipse.core.internal.resources.ResourceException: Resource '/terminal' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+	at net.rim.ejde.internal.E.E.resourceChanged(RIMEIDE:2456)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.handleEvent(NotificationManager.java:261)
+	at org.eclipse.core.internal.resources.Workspace.broadcastEvent(Workspace.java:390)
+	at org.eclipse.core.internal.resources.Resource.broadcastPreDeleteEvent(Resource.java:1988)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:765)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:130)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+12:46:47,828 TRACE [R] ContextManager starting, bundle version: 1.5.0.201111031624
+12:46:47,984 DEBUG [C] Property change listener is enabled.
+12:46:48,046 TRACE [R] ContextManager startingneed update: false
+12:46:48,062 DEBUG [T] Starting Search for CPs
+12:46:48,062 DEBUG [T] CP named BlackBerry Java SDK version 6.0.0 was found at C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components
+12:46:48,234 DEBUG [K] VM: *ADDED* [1332863561468$C:\Program Files\Java\jre7]
+12:46:48,234 DEBUG [K] VM: *ADDED* [BlackBerry JRE 6.0.0$C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components]
+12:46:48,828 TRACE [V] Attempting to create VM with name - BlackBerry JRE 6.0.0
+12:46:48,828 DEBUG [I] Bundle [net.rim.ejde] is changing state to Started.
+08:44:55,593 TRACE [R] ContextManager starting, bundle version: 1.5.0.201111031624
+08:44:56,093 DEBUG [C] Property change listener is enabled.
+08:44:56,343 TRACE [R] ContextManager startingneed update: false
+08:44:56,359 DEBUG [T] Starting Search for CPs
+08:44:56,421 DEBUG [T] CP named BlackBerry Java SDK version 6.0.0 was found at C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components
+08:44:56,593 DEBUG [K] VM: *ADDED* [BlackBerry JRE 6.0.0$C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components]
+08:44:57,343 DEBUG [K] VM: *ADDED* [1332863561468$C:\Program Files\Java\jre7]
+08:44:57,343 TRACE [V] Attempting to create VM with name - BlackBerry JRE 6.0.0
+08:44:57,734 DEBUG [I] Bundle [net.rim.ejde] is changing state to Started.
+11:12:24,250 TRACE [R] ContextManager starting, bundle version: 1.5.0.201111031624
+11:12:24,562 DEBUG [C] Property change listener is enabled.
+11:12:24,718 TRACE [R] ContextManager startingneed update: false
+11:12:24,718 DEBUG [T] Starting Search for CPs
+11:12:24,765 DEBUG [T] CP named BlackBerry Java SDK version 6.0.0 was found at C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components
+11:12:25,421 DEBUG [K] VM: *ADDED* [1332863561468$C:\Program Files\Java\jre7]
+11:12:25,421 DEBUG [K] VM: *ADDED* [BlackBerry JRE 6.0.0$C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components]
+11:12:25,593 TRACE [V] Attempting to create VM with name - BlackBerry JRE 6.0.0
+11:12:25,812 DEBUG [I] Bundle [net.rim.ejde] is changing state to Started.
+11:16:08,609 DEBUG [E] Error removing BB properties from Cache on project <stm32_photizo_dem0> deletion
+org.eclipse.core.internal.resources.ResourceException: Resource '/stm32_photizo_dem0' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+	at net.rim.ejde.internal.E.E.resourceChanged(RIMEIDE:2456)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.handleEvent(NotificationManager.java:261)
+	at org.eclipse.core.internal.resources.Workspace.broadcastEvent(Workspace.java:390)
+	at org.eclipse.core.internal.resources.Resource.broadcastPreDeleteEvent(Resource.java:1988)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:765)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:130)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+11:16:11,421 DEBUG [E] Error removing BB properties from Cache on project <hello_eCos> deletion
+org.eclipse.core.internal.resources.ResourceException: Resource '/hello_eCos' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+	at net.rim.ejde.internal.E.E.resourceChanged(RIMEIDE:2456)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.handleEvent(NotificationManager.java:261)
+	at org.eclipse.core.internal.resources.Workspace.broadcastEvent(Workspace.java:390)
+	at org.eclipse.core.internal.resources.Resource.broadcastPreDeleteEvent(Resource.java:1988)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:765)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:130)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+11:16:14,890 DEBUG [E] Error removing BB properties from Cache on project <cplusplus> deletion
+org.eclipse.core.internal.resources.ResourceException: Resource '/cplusplus' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+	at net.rim.ejde.internal.E.E.resourceChanged(RIMEIDE:2456)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.handleEvent(NotificationManager.java:261)
+	at org.eclipse.core.internal.resources.Workspace.broadcastEvent(Workspace.java:390)
+	at org.eclipse.core.internal.resources.Resource.broadcastPreDeleteEvent(Resource.java:1988)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:765)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:130)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+15:59:35,093 TRACE [R] ContextManager starting, bundle version: 1.5.0.201111031624
+15:59:35,218 DEBUG [C] Property change listener is enabled.
+15:59:35,265 TRACE [R] ContextManager startingneed update: false
+15:59:35,265 DEBUG [T] Starting Search for CPs
+15:59:35,265 DEBUG [T] CP named BlackBerry Java SDK version 6.0.0 was found at C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components
+15:59:35,296 DEBUG [K] VM: *ADDED* [1332863561468$C:\Program Files\Java\jre7]
+15:59:35,296 DEBUG [K] VM: *ADDED* [BlackBerry JRE 6.0.0$C:\Program Files\eclipse\plugins\net.rim.ejde.componentpack6.0.0_6.0.0.40\components]
+15:59:35,328 TRACE [V] Attempting to create VM with name - BlackBerry JRE 6.0.0
+15:59:35,343 DEBUG [I] Bundle [net.rim.ejde] is changing state to Started.
