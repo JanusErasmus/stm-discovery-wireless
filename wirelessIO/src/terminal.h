@@ -3,7 +3,7 @@
 #include "stm32f10x.h"
 #include "termStrings.h"
 
-void initTerminal(void);
+void initTerminal();
 bool t_hadInput();
 
 bool t_jumpNow();

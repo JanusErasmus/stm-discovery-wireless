@@ -8,6 +8,11 @@
 #include "termHandler.h"
 #include "jumper.h"
 
+//define the terminal that will be used
+//#define TERM_UART1
+#define TERM_UART2
+//#define TERM_UART3_REMAPPED
+
 #define TERM_BUFF_LEN 64
 #define TERM_ECHO
 #define TERM_MAP_CR_CRNL
@@ -21,30 +26,77 @@ bool t_jumpFlag = 0;
 char t_buff[TERM_BUFF_LEN];
 uint8_t t_buffLen = 0;
 
-void initTerminal(void)
+USART_TypeDef* termUART = 0;
+
+void initTerminal()
 {
+#ifdef TERM_UART1
+	termUART = USART1;
 	//enable USART 1 clock
 	RCC_APB2PeriphClockCmd(RCC_APB2ENR_USART1EN, ENABLE);
+	//Enable GPIOA clock
+	RCC_APB2PeriphClockCmd(RCC_APB2ENR_IOPAEN, ENABLE);
+#elif defined TERM_UART2
+	termUART = USART2;
+	//enable USART 2 clock
+	RCC_APB1PeriphClockCmd(RCC_APB1ENR_USART2EN, ENABLE);
+	//Enable GPIOA clock
+	RCC_APB2PeriphClockCmd(RCC_APB2ENR_IOPAEN, ENABLE);
+#elif TERM_UART3_REMAPPED
+	termUART = USART3;
+	//enable USART 3 clock
+	RCC_APB1PeriphClockCmd(RCC_APB1ENR_USART3EN, ENABLE);
+	//Enable GPIOC clock
+	RCC_APB2PeriphClockCmd(RCC_APB2ENR_IOPCEN, ENABLE);
+#else
+#warning You need to define a terminal UART
+#endif
+
 
 	//enable Alternate function reg
 	RCC_APB2PeriphClockCmd(RCC_APB2ENR_AFIOEN, ENABLE);
 
-	//Enable GPIOA clock
-	RCC_APB2PeriphClockCmd(RCC_APB2ENR_IOPAEN, ENABLE);
+	GPIO_InitTypeDef txPin;
+	GPIO_InitTypeDef rxPin;
+
+#ifdef TERM_UART1
+	txPin.GPIO_Pin = GPIO_Pin_9;
+	txPin.GPIO_Mode = GPIO_Mode_AF_PP;
+	txPin.GPIO_Speed = GPIO_Speed_2MHz;
+	GPIO_Init(GPIOA, &txPin);
+
+	rxPin.GPIO_Pin = GPIO_Pin_10;
+	rxPin.GPIO_Mode = GPIO_Mode_IPU;
+	rxPin.GPIO_Speed = GPIO_Speed_2MHz;
+	GPIO_Init(GPIOA, &rxPin);
+
+#elif defined TERM_UART2
+	txPin.GPIO_Pin = GPIO_Pin_2;
+	txPin.GPIO_Mode = GPIO_Mode_AF_PP;
+	txPin.GPIO_Speed = GPIO_Speed_2MHz;
+	GPIO_Init(GPIOA, &txPin);
+
+	rxPin.GPIO_Pin = GPIO_Pin_3;
+	rxPin.GPIO_Mode = GPIO_Mode_IN_FLOATING;
+	rxPin.GPIO_Speed = GPIO_Speed_2MHz;
+	GPIO_Init(GPIOA, &rxPin);
+
+#elif defined TERM_UART3_REMAPPED
+	txPin.GPIO_Pin = GPIO_Pin_10;
+	txPin.GPIO_Mode = GPIO_Mode_AF_PP;
+	txPin.GPIO_Speed = GPIO_Speed_2MHz;
+	GPIO_Init(GPIOC, &txPin);
+
+	rxPin.GPIO_Pin = GPIO_Pin_11;
+	rxPin.GPIO_Mode = GPIO_Mode_IN_FLOATING;
+	rxPin.GPIO_Speed = GPIO_Speed_2MHz;
+	GPIO_Init(GPIOC, &rxPin);
+
+	GPIO_PinRemapConfig(GPIO_PartialRemap_USART3, ENABLE);
+#endif
 
 
-	GPIO_InitTypeDef pin;
-	pin.GPIO_Pin = GPIO_Pin_9;
-	pin.GPIO_Mode = GPIO_Mode_AF_PP;
-	pin.GPIO_Speed = GPIO_Speed_2MHz;
-	GPIO_Init(GPIOA, &pin);
-
-	pin.GPIO_Pin = GPIO_Pin_10;
-	pin.GPIO_Mode = GPIO_Mode_IN_FLOATING;
-	pin.GPIO_Speed = GPIO_Speed_2MHz;
-	GPIO_Init(GPIOA, &pin);
-
-	USART_Cmd(USART1, ENABLE);
+	USART_Cmd(termUART, ENABLE);
 
 	USART_InitTypeDef usartSetup;
 	usartSetup.USART_BaudRate = 115200;
@@ -53,20 +105,25 @@ void initTerminal(void)
 	usartSetup.USART_Parity = USART_Parity_No;
 	usartSetup.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
 	usartSetup.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
-	USART_Init(USART1, &usartSetup);
+	USART_Init(termUART, &usartSetup);
 
 
 	//Map UART interrupt
 	NVIC_InitTypeDef termInt;
+#ifdef TERM_UART1
 	termInt.NVIC_IRQChannel = USART1_IRQn;
-	termInt.NVIC_IRQChannelCmd =ENABLE;
+#elif defined TERM_UART2
+	termInt.NVIC_IRQChannel = USART2_IRQn;
+#elif defined TERM_UART3_REMAPPED
+	termInt.NVIC_IRQChannel = USART3_IRQn;
+#endif
+
+	termInt.NVIC_IRQChannelCmd = ENABLE;
 	termInt.NVIC_IRQChannelPreemptionPriority = 1;
 	termInt.NVIC_IRQChannelSubPriority = 2;
 	NVIC_Init(&termInt);
 
-	USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);
-
-
+	USART_ITConfig(termUART, USART_IT_RXNE, ENABLE);
 }
 
 bool t_hadInput()
@@ -117,8 +174,8 @@ void t_print(const char* str)
 
 void t_putc(char c)
 {
-	USART_SendData(USART1, c);
-	while(!USART_GetFlagStatus(USART1, USART_FLAG_TXE));
+	USART_SendData(termUART, c);
+	while(!USART_GetFlagStatus(termUART, USART_FLAG_TXE));
 }
 
 
@@ -175,11 +232,17 @@ void d_print(const uint8_t reg)
 	while(!USART_GetFlagStatus(USART1, USART_FLAG_TXE));
 }
 
+#ifdef TERM_UART1
 void USART1_IRQHandler(void)
+#elif defined TERM_UART2
+void USART2_IRQHandler(void)
+#elif defined TERM_UART3_REMAPPED
+void USART3_IRQHandler(void)
+#endif
 {
 	t_InputFlag = 1;
 
-	uint32_t data =	USART1->DR;
+	uint32_t data =	termUART->DR;
 
 #ifdef TERM_ECHO
 	t_putc(data);
@@ -192,7 +255,7 @@ void USART1_IRQHandler(void)
 		t_buff[t_buffLen++] = '\n';
 		t_putc('\n');
 	}else
-#elif TERM_MAP_NL_CRNL
+#elif defined TERM_MAP_NL_CRNL
 	if(data == '\n')
 	{
 		t_buff[t_buffLen++] = '\r';

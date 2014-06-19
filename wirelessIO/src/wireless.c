@@ -26,25 +26,28 @@ void delayByteTx(void);
 
 void initWireless(void)
 {
-	//enable USART 2 clock
-	RCC_APB1PeriphClockCmd(RCC_APB1ENR_USART2EN, ENABLE);
+	//enable USART 3 clock
+	RCC_APB1PeriphClockCmd(RCC_APB1ENR_USART3EN, ENABLE);
 
-	//Enable GPIOA clock
-	RCC_APB2PeriphClockCmd(RCC_APB2ENR_IOPAEN, ENABLE);
+	//Enable GPIOB clock
+	RCC_APB2PeriphClockCmd(RCC_APB2ENR_IOPBEN, ENABLE);
 
+	//Remap to PC10 and PC11
+	//GPIO_PinRemapConfig(GPIO_PartialRemap_USART3, ENABLE);
 
-	GPIO_InitTypeDef pin;
-	pin.GPIO_Pin = GPIO_Pin_2;
-	pin.GPIO_Mode = GPIO_Mode_AF_PP;
-	pin.GPIO_Speed = GPIO_Speed_2MHz;
-	GPIO_Init(GPIOA, &pin);
+	GPIO_InitTypeDef txPin;
+	GPIO_InitTypeDef rxPin;
+	txPin.GPIO_Pin = GPIO_Pin_10;
+	txPin.GPIO_Mode = GPIO_Mode_AF_PP;
+	txPin.GPIO_Speed = GPIO_Speed_2MHz;
+	GPIO_Init(GPIOB, &txPin);
 
-	pin.GPIO_Pin = GPIO_Pin_3;
-	pin.GPIO_Mode = GPIO_Mode_IN_FLOATING;
-	pin.GPIO_Speed = GPIO_Speed_2MHz;
-	GPIO_Init(GPIOA, &pin);
+	rxPin.GPIO_Pin = GPIO_Pin_11;
+	rxPin.GPIO_Mode = GPIO_Mode_IPU;
+	rxPin.GPIO_Speed = GPIO_Speed_2MHz;
+	GPIO_Init(GPIOB, &rxPin);
 
-	USART_Cmd(USART2, ENABLE);
+	USART_Cmd(USART3, ENABLE);
 
 	USART_InitTypeDef usartSetup;
 	usartSetup.USART_BaudRate = 2400;
@@ -53,60 +56,59 @@ void initWireless(void)
 	usartSetup.USART_Parity = USART_Parity_No;
 	usartSetup.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
 	usartSetup.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
-	USART_Init(USART2, &usartSetup);
+	USART_Init(USART3, &usartSetup);
 
 	//Map UART interrupt
 	NVIC_InitTypeDef rxInt;
-	rxInt.NVIC_IRQChannel = USART2_IRQn;
-	rxInt.NVIC_IRQChannelCmd =ENABLE;
-	rxInt.NVIC_IRQChannelPreemptionPriority = 2;
-	rxInt.NVIC_IRQChannelSubPriority = 3;
+	rxInt.NVIC_IRQChannel = USART3_IRQn;
+	rxInt.NVIC_IRQChannelCmd = ENABLE;
+	rxInt.NVIC_IRQChannelPreemptionPriority = 3;
+	rxInt.NVIC_IRQChannelSubPriority = 4;
 	NVIC_Init(&rxInt);
 
-	USART_ITConfig(USART2, USART_IT_RXNE, ENABLE);
+	USART_ITConfig(USART3, USART_IT_RXNE, ENABLE);
 }
 
 void w_send(uint8_t * buff, uint8_t len)
 {
 	GPIO_InitTypeDef pin;
-	pin.GPIO_Pin = GPIO_Pin_2;
+	pin.GPIO_Pin = GPIO_Pin_10;
 	pin.GPIO_Mode = GPIO_Mode_AF_PP;
 	pin.GPIO_Speed = GPIO_Speed_2MHz;
-	GPIO_Init(GPIOA, &pin);
+	GPIO_Init(GPIOB, &pin);
 
 	uint32_t txLen = WBUFF_LEN;
 	HDLC_Frame(buff, len, wTXbuff, &txLen);
 
 	for(int k = 0; k < txLen; k++)
 	{
-		USART_SendData(USART2, wTXbuff[k]);
-		while(!USART_GetFlagStatus(USART2, USART_FLAG_TXE));
+
+		USART_SendData(USART3, wTXbuff[k]);
+		while(!USART_GetFlagStatus(USART3, USART_FLAG_TXE));
 	}
 
-	delayByteTx();
-
-	pin.GPIO_Pin = GPIO_Pin_2;
-	pin.GPIO_Mode = GPIO_Mode_Out_PP;
-	pin.GPIO_Speed = GPIO_Speed_2MHz;
-	GPIO_Init(GPIOA, &pin);
-
-	GPIO_ResetBits(GPIOA, GPIO_Pin_2);
+//	delayByteTx();
+//
+//	pin.GPIO_Pin = GPIO_Pin_10;
+//	pin.GPIO_Mode = GPIO_Mode_Out_PP;
+//	pin.GPIO_Speed = GPIO_Speed_2MHz;
+//	GPIO_Init(GPIOB, &pin);
+//
+//	GPIO_ResetBits(GPIOB, GPIO_Pin_10);
 }
 
 void delayByteTx()
 {
-	volatile int t = 30000;
+	volatile int t = 15000;
 
-	while(t >0 )
+	while(t > 0 )
 		t--;
 }
 
-void USART2_IRQHandler(void)
+void USART3_IRQHandler(void)
 {
-	uint8_t data =	USART2->DR;
+	uint8_t data =	USART3->DR;
 
-
-	t_putc(data);
 
 	if(wLen++ > WBUFF_LEN)
 		wLen = 0;
@@ -180,7 +182,7 @@ void USART2_IRQHandler(void)
 				{
 					wRXbuff[k] = wFbuff[k];
 				}
-
+				t_putc('V');
 				validFrame = 0;
 				fLen = 0;
 			}

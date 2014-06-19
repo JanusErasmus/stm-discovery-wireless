@@ -31,8 +31,9 @@ int main(void)
 
 	while(!t_jumpNow())
 	{
-		w_send(buff,t_strlen((char*)buff));
+	//	w_send(buff,t_strlen((char*)buff));
 		delay();
+		//t_print(".");
 	}
 
 	t_print("Jumping\n");
@@ -54,7 +55,7 @@ void* memcpy( void * destination, const void * source, int num )
 
 void delay()
 {
-	volatile int t = 15000000;
+	volatile int t = 1500000;
 
 	while(t >0 )
 	{
