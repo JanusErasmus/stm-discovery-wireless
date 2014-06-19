@@ -6,6 +6,7 @@
 #include "terminal.h"
 #include "jumper.h"
 #include "wireless.h"
+#include "led.h"
 
 void delay();
 
@@ -20,6 +21,7 @@ int main(void)
 
 	initTerminal();
 	initWireless();
+	initLED();
 
 	t_print("Wireless IO\n");
 	t_print(__DATE__);
@@ -27,11 +29,11 @@ int main(void)
 	t_print(__TIME__);
 	t_print("\n");
 
-	uint8_t buff[] = {"T"};
+	uint8_t buff[] = {"Hello daar dis, 'n baie lang sin\r\nEn nog so bietjie\r\n"};
 
 	while(!t_jumpNow())
 	{
-	//	w_send(buff,t_strlen((char*)buff));
+		w_send(buff,t_strlen((char*)buff));
 		delay();
 		//t_print(".");
 	}
@@ -55,7 +57,7 @@ void* memcpy( void * destination, const void * source, int num )
 
 void delay()
 {
-	volatile int t = 1500000;
+	volatile int t = 15000000;
 
 	while(t >0 )
 	{

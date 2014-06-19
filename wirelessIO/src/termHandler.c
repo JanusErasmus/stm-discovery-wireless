@@ -4,6 +4,7 @@
 #include "termHandler.h"
 #include "termStrings.h"
 #include "version.h"
+#include "led.h"
 
 typedef void (*func_t)();
 
@@ -24,6 +25,9 @@ termCommands cmdTable[] = {
 		{"ver", "Bootloader Version", version},
 		{"reset", "Reset Processor", reset},
 		{"jump", "Jump to loaded firmware", t_setJumpFlag},
+		{"blue", "Toggle blue LED", led_toggleBlue},
+		{"green", "Toggle green LED", led_toggleGreen},
+
 		{0,0,0}
 };
 

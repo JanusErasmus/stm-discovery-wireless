@@ -9,8 +9,8 @@
 #include "jumper.h"
 
 //define the terminal that will be used
-//#define TERM_UART1
-#define TERM_UART2
+#define TERM_UART1
+//#define TERM_UART2
 //#define TERM_UART3_REMAPPED
 
 #define TERM_BUFF_LEN 64

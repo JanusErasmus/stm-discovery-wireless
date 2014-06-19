@@ -36,12 +36,13 @@ void initWireless(void)
 	//GPIO_PinRemapConfig(GPIO_PartialRemap_USART3, ENABLE);
 
 	GPIO_InitTypeDef txPin;
-	GPIO_InitTypeDef rxPin;
+
 	txPin.GPIO_Pin = GPIO_Pin_10;
 	txPin.GPIO_Mode = GPIO_Mode_AF_PP;
 	txPin.GPIO_Speed = GPIO_Speed_2MHz;
 	GPIO_Init(GPIOB, &txPin);
 
+	GPIO_InitTypeDef rxPin;
 	rxPin.GPIO_Pin = GPIO_Pin_11;
 	rxPin.GPIO_Mode = GPIO_Mode_IPU;
 	rxPin.GPIO_Speed = GPIO_Speed_2MHz;
@@ -87,14 +88,14 @@ void w_send(uint8_t * buff, uint8_t len)
 		while(!USART_GetFlagStatus(USART3, USART_FLAG_TXE));
 	}
 
-//	delayByteTx();
-//
-//	pin.GPIO_Pin = GPIO_Pin_10;
-//	pin.GPIO_Mode = GPIO_Mode_Out_PP;
-//	pin.GPIO_Speed = GPIO_Speed_2MHz;
-//	GPIO_Init(GPIOB, &pin);
-//
-//	GPIO_ResetBits(GPIOB, GPIO_Pin_10);
+	delayByteTx();
+
+	pin.GPIO_Pin = GPIO_Pin_10;
+	pin.GPIO_Mode = GPIO_Mode_Out_PP;
+	pin.GPIO_Speed = GPIO_Speed_2MHz;
+	GPIO_Init(GPIOB, &pin);
+
+	GPIO_ResetBits(GPIOB, GPIO_Pin_10);
 }
 
 void delayByteTx()
@@ -182,7 +183,9 @@ void USART3_IRQHandler(void)
 				{
 					wRXbuff[k] = wFbuff[k];
 				}
-				t_putc('V');
+				for(int p = 0; p < wLen; p++)
+					t_putc(wRXbuff[p]);
+
 				validFrame = 0;
 				fLen = 0;
 			}
