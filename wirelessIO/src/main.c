@@ -27,7 +27,7 @@ int main(void)
 	t_print(__TIME__);
 	t_print("\n");
 
-	uint8_t buff[] = {"The quick brown fox jumps over the lazy dog\n\rThe quick brown fox jumps over the lazy dog\n\r"};
+	uint8_t buff[] = {"T"};
 
 	while(!t_jumpNow())
 	{
