@@ -6527,3 +6527,160 @@ Binding(CTRL+SHIFT+H,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.cdt.ui.cViewScope,,,system)
+!SESSION 2014-06-20 06:43:46.125 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_ZA
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.ui 4 4 2014-06-20 06:44:36.625
+!MESSAGE Referenced part does not exist yet: org.eclipse.jdt.ui.PackageExplorer.
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-06-20 06:45:08.796
+!MESSAGE Indexed 'wirelessIO' (9 sources, 32 headers) in 1,83 sec: 1 307 declarations; 2 551 references; 13 unresolved inclusions; 18 syntax errors; 0 unresolved names (0,00%)
+
+!ENTRY org.eclipse.core.resources 4 2 2014-06-20 06:45:15.750
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.managedbuilder.internal.core.Tool.getOutputExtension(Tool.java:2305)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.addRuleForSource(GnuMakefileGenerator.java:2314)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.addFragmentMakefileEntriesForSource(GnuMakefileGenerator.java:2068)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.addSources(GnuMakefileGenerator.java:1979)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.populateFragmentMakefile(GnuMakefileGenerator.java:980)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.regenerateMakefiles(GnuMakefileGenerator.java:900)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:997)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:864)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:739)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:504)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:450)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:513)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:432)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:305)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.resources 4 75 2014-06-20 06:45:15.937
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 75 2014-06-20 06:45:15.937
+!MESSAGE Errors running builder 'CDT Builder' on project 'wirelessIO'.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.managedbuilder.internal.core.Tool.getOutputExtension(Tool.java:2305)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.addRuleForSource(GnuMakefileGenerator.java:2314)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.addFragmentMakefileEntriesForSource(GnuMakefileGenerator.java:2068)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.addSources(GnuMakefileGenerator.java:1979)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.populateFragmentMakefile(GnuMakefileGenerator.java:980)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.regenerateMakefiles(GnuMakefileGenerator.java:900)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:997)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:864)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:739)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:504)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:450)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:513)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:432)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:305)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.resources 4 2 2014-06-20 06:45:45.734
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.managedbuilder.internal.core.Tool.getOutputExtension(Tool.java:2305)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.addRuleForSource(GnuMakefileGenerator.java:2314)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.addFragmentMakefileEntriesForSource(GnuMakefileGenerator.java:2068)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.addSources(GnuMakefileGenerator.java:1979)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.populateFragmentMakefile(GnuMakefileGenerator.java:980)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.regenerateMakefiles(GnuMakefileGenerator.java:900)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:997)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:864)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:739)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:504)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:450)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:513)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:432)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:305)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.resources 4 75 2014-06-20 06:45:45.875
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 75 2014-06-20 06:45:45.875
+!MESSAGE Errors running builder 'CDT Builder' on project 'wirelessIO'.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.managedbuilder.internal.core.Tool.getOutputExtension(Tool.java:2305)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.addRuleForSource(GnuMakefileGenerator.java:2314)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.addFragmentMakefileEntriesForSource(GnuMakefileGenerator.java:2068)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.addSources(GnuMakefileGenerator.java:1979)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.populateFragmentMakefile(GnuMakefileGenerator.java:980)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.regenerateMakefiles(GnuMakefileGenerator.java:900)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:997)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:864)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:739)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:504)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:450)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:513)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:432)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:305)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2014-06-21 09:24:30.203 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_ZA
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-06-21 09:24:46.421
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2014-06-22 18:59:39.156 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_ZA
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-06-22 19:00:47.156
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.

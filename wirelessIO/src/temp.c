@@ -48,18 +48,24 @@ void initTemp()
 	//showRegN("SQR3", ADC1->SQR3);
 }
 
-char* getTemp()
+uint16_t getTemp()
 {
-		//sample
+	//sample
 	ADC1->SR = 0;
 	ADC1->CR2 |= ADC_CR2_SWSTART;
 	while(!(ADC1->SR & ADC_SR_EOC));
 
-	uint16_t temp = ADC1->DR;
-//	showRegN("An16", temp);
-//	showRegN("An17", ADC1->DR);
+	return ADC1->DR;
+}
 
-	return tempADC[temp - 0x700];
+char* getTempString()
+{
+	return tempADC[getTemp() - 0x700];
+}
+
+char* getTempLookupString(uint16_t idx)
+{
+	return tempADC[idx - 0x700];
 }
 
 void adc_showTemp()

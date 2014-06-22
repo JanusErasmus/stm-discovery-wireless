@@ -9,8 +9,8 @@
 #include "jumper.h"
 
 //define the terminal that will be used
-#define TERM_UART1
-//#define TERM_UART2
+//#define TERM_UART1
+#define TERM_UART2
 //#define TERM_UART3_REMAPPED
 
 #define TERM_BUFF_LEN 64
@@ -228,8 +228,9 @@ void d_print(const uint8_t reg)
 		digit = (reg - 10) + 0x41;
 	}
 
-	USART_SendData(USART1, digit);
-	while(!USART_GetFlagStatus(USART1, USART_FLAG_TXE));
+	t_putc(digit);
+//	USART_SendData(USART1, digit);
+//	while(!USART_GetFlagStatus(USART1, USART_FLAG_TXE));
 }
 
 #ifdef TERM_UART1

@@ -7,6 +7,7 @@
 #include "terminal.h"
 #include "wireless.h"
 #include "crc.h"
+#include "temp.h"
 
 #define WBUFF_LEN 64
 
@@ -81,13 +82,15 @@ void w_send(uint8_t * buff, uint8_t len)
 	uint32_t txLen = WBUFF_LEN;
 	HDLC_Frame(buff, len, wTXbuff, &txLen);
 
-	for(int k = 0; k < txLen; k++)
+	for(int l =0; l < 5; l++)
 	{
+		for(int k = 0; k < txLen; k++)
+		{
 
-		USART_SendData(USART3, wTXbuff[k]);
-		while(!USART_GetFlagStatus(USART3, USART_FLAG_TXE));
+			USART_SendData(USART3, wTXbuff[k]);
+			while(!USART_GetFlagStatus(USART3, USART_FLAG_TXE));
+		}
 	}
-
 	delayByteTx();
 
 	pin.GPIO_Pin = GPIO_Pin_10;
@@ -183,9 +186,10 @@ void USART3_IRQHandler(void)
 				{
 					wRXbuff[k] = wFbuff[k];
 				}
-				for(int p = 0; p < wLen; p++)
-					t_putc(wRXbuff[p]);
+				uint16_t val = wRXbuff[0] | (wRXbuff[1] << 8);
+				t_print(getTempLookupString(val));
 
+				t_print("\r\n");
 				validFrame = 0;
 				fLen = 0;
 			}
